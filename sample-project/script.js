@@ -6,6 +6,7 @@ const {
   deleteUser,
   getUserByName,
   fistUserWithName,
+  getAllUsers,
 } = require("./Repository/UserRepository");
 
 mongoose
@@ -19,5 +20,7 @@ async function run(name) {
   let users = await fistUserWithName("Jitu");
   console.log(users);
 }
+
+app.
 
 run();

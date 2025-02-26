@@ -38,4 +38,14 @@ async function fistUserWithName(name) {
   return user;
 }
 
-module.exports = { createUser, deleteUser, getUserByName, fistUserWithName };
+function getAllUsers() {
+  return User.find();
+}
+
+module.exports = {
+  createUser,
+  deleteUser,
+  getUserByName,
+  fistUserWithName,
+  getAllUsers,
+};
